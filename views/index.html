@@ -25,7 +25,7 @@
 
 
     <!--Recieve Message Area-->
-    <section class="Rmessages">
+    <section class="Reciever">
       <ul id="messages">
         <!-- render a new message component for every message -->
         <newmsg v-for="message in messages" :message="message"></newmsg>
@@ -33,13 +33,12 @@
     </section>
 
 
-
     <!--Message Input Area-->
     <section class="inputArea">
       <form class="input">
         <label for="message"></label>
 
-        <textarea @focus="dispatchTypingEvent" @blur="hideAlerts" v-model="message" id="textarea" class="message" autocomplete="off"></textarea>
+        <textarea @focus="dispatchTypingEvent" v-model="message" id="textarea" class="message" autocomplete="off"></textarea>
         <input @click.prevent="dispatchMessage" class="send" type="submit" value="Send">
       </form>
       

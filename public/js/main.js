@@ -16,20 +16,16 @@ function addNewMessage(message) {
 }
 
 function handleTypingEvent(user) {
-  const messageContainer = document.getElementById('message-container');
-  const message = 'Someone is typing...';
+  //const messageContainer = document.getElementById('message-container');
+  //const message = 'is typing...';
 
-  if (window.name === 'main') {
-    console.log(message);
-    messageContainer.innerText = message;
-  }
-
-  console.log(user, 'someone is typing');
+   
+  console.log(user, 'typing..');
   //vm.userTyping = `${data.user} is typing...`;
 
-  messageContainer = (user, 'typing');
+  //messageContainer = (user, 'typing');
 
-  document.querySelector('.alert').getElementsByClassName.display = "block";
+  //document.querySelector('.alert').getElementsByClassName.display = "block";
 
 }
 
@@ -76,10 +72,10 @@ const vm = createApp({
       socket.emit('typing_event', { user: this.nickname || 'anonymous' })
     },
 
-    hideAlerts() {
-      document.querySelector('.alert').style.display = "block";
+   // hideAlerts() {
+      //document.querySelector('.alert').style.display = "block";
 
-    },
+  //  },
 
     dispatchJoined() {
       console.log('Someone has joined');
