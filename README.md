@@ -20,7 +20,7 @@
 ----
 
 ## Design
- - Team Page Design https://docs.google.com/document/d/1nMxuWLbLiwlyPIeRVToQJMsPbZi6qvnNflz3PZaxm-0/edit?usp=sharing
+ - ChatApp Documentation https://docs.google.com/document/d/1OyYO7QDZAA9XRnaKjKt7p7vYbIbw-Bp_yhn31rPFL88/edit?usp=sharing
  
 
 
