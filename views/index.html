@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+
+  <title>Test Chat App</title>
+</head>
+<body>
+  <div class="top">
+    <h1>Simple Chat App</h1>
+
+  </div>
+   
+
+  <main id="app">
+    <section class="login">
+      <h2>Type Your Name here:</h2>
+      <input v-model="username" id="nickname" type="text" placeholder="Nickname?">
+    </section>
+
+
+
+    <!--Recieve Message Area-->
+    <section class="Rmessages">
+      <ul id="messages">
+        <!-- render a new message component for every message -->
+        <newmsg v-for="message in messages" :message="message"></newmsg>
+      </ul>
+    </section>
+
+
+
+    <!--Message Input Area-->
+    <section class="inputArea">
+      <form class="input">
+        <label for="message"></label>
+
+        <textarea @focus="dispatchTypingEvent" @blur="hideAlerts" v-model="message" id="textarea" class="message" autocomplete="off"></textarea>
+        <input @click.prevent="dispatchMessage" class="send" type="submit" value="Send">
+      </form>
+      
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  
+  <!-- adding the socket.io client -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="js/main.js" type="module" defer></script>
+</body>
+</html>
+
+ 

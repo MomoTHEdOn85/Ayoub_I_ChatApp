@@ -1,0 +1,148 @@
+ *{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: $font;
+   
+}
+
+.top {
+  text-align: center;
+  padding: 1em;
+  background-color: azure;
+}
+
+.alert {
+  padding: 0.4em;
+  text-align: center;
+}
+
+.login {
+
+   
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b6e8ff;
+  gap: 1em;
+   
+  #nickname {
+    flex: 1;
+    border: 1px solid black;
+    padding: 1em;
+    text-align: center;
+  }
+}
+
+
+  
+#app {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ 
+article {
+  p {
+    width: auto;
+  }
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.chat-messages {
+    float: left;
+    clear: both;
+    width: 20%;
+    p {
+ 
+      border-radius: 1em;
+      padding: 1em;
+      color: #fff;
+      font-size: 1em;
+       
+      background-color: rgba(164, 163, 163, 0.8);
+
+    }
+  
+  
+ 
+}
+.other-messages {
+    float: right;
+  
+    p {
+      background-color: rgb(0, 111, 175);
+
+    }
+    
+}
+
+
+ 
+
+  
+
+  
+  /* Input Area */
+
+  .inputArea{ 
+    overflow-y: hidden;
+  }
+  
+  form {
+    background-color: #c8eeff;
+    overflow-y: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding: 10px 15px;
+    gap: 1em;
+  }
+  
+  .input .message {
+    flex: 1;
+    overflow-y: hidden;
+    width: calc(100% - 80px);
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    border: 1px solid black;
+  }
+  
+  .input .send {
+    flex: 1;
+    width: 80px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 125, 175);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+ 
+ 
+ 
+  
+ 
+ 
+
+  
